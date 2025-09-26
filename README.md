@@ -1,4 +1,4 @@
-# Exercise 3.4 — Regular expressions of *Frankenstein*
+# Regular expressions of *Frankenstein*
 
 This project searches **Frankenstein; Or, The Modern Prometheus** (Project Gutenberg) for the pattern:
 
