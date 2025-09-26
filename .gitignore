@@ -20,5 +20,7 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+# Python virtual environment
 .venv/
+venv/
 .DS_Store
