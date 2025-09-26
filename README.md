@@ -6,17 +6,16 @@ This project searches **Frankenstein; Or, The Modern Prometheus** (Project Guten
 - We do **no heavy preprocessing** (per the instructions). We only trim the Gutenberg header/footer so the matches reflect the novel’s body text.
 
 ## Approach (regex)
-
-Python `re` pattern (case‑insensitive):
+Python `re` pattern (case-insensitive):
 
 ```
-(?i)for\s+([\w’'-]+(?:\s+[\w’'-]+)*)\s+years
+(?i)for\s+([\w'-]+(?:\s+[\w'-]+)*)\s+years
 ```
 
 - `(?i)` — case insensitive
-- `for` … `years` — anchors the phrase
-- `([\w’'-]+(?:\s+[\w’'-]+)*)` — captures **one or more words** (letters/digits/apostrophes/hyphen) in between
-- We additionally **count words** in the capture group and keep basic context.
+- `for` … `years` — anchors the phrase
+- `([\w'-]+(?:\s+[\w'-]+)*)` — captures **one or more words** (letters/digits/apostrophes/hyphen) in between
+- We also count the words in the capture group and keep brief left/right context.
 
 ## How to run
 
@@ -85,4 +84,4 @@ Below are the 12 matches (start/end are character offsets in the cleaned text). 
 
 ---
 
-*Course: Statistical Methods for Text Data Analysis — Exercise 3.4*
+*Statistical Methods for Text Data Analysis
